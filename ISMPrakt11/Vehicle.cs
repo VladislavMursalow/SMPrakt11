@@ -9,13 +9,14 @@ namespace ISMPrakt11
     public abstract class Vehicle
     {
         protected List<string> _visitedCities;
-
         protected int _mileage;
+        protected string[] _descriptions;
 
-        public Vehicle()
+        public Vehicle(string [] decriptions)
         {
             _mileage = 0;
             _visitedCities = new List<string>();
+            _descriptions = decriptions;
         }
 
         public void Ride(string city, int mileage) 
